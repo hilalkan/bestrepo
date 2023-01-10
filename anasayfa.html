@@ -5,19 +5,212 @@
 <title>Page Title</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="">
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="js/slider-min.js" type="text/javascript">
+</script> 
+
 <style>
+
+body {
+    text-align: center;
+    background-image: url("file:///C:/Users/V4/Desktop/dizi&film/images/duvar-kagitlari-dunya-ucak-yollari-yolculuk-seamless-pattern-arka-plan-vektor-sonsuz-doku-duvar-kagidi-desen-doldurmalari-web-sayfasi-arka-plan-yuzey-icin-kullanilabilir.jpg.jpg");
+}
+ 
+hr {
+    width: 60%;
+    border-style: solid;
+    color: cornflowerblue;
+    border-width: 2px;
+}
+
+.paragraf{
+    border-style:solid;
+    height: 135px;
+    width: 600px;
+    margin:5px auto;
+    background-color: white;
+}
+
+a:link {
+    color:black;    
+    text-decoration: none;
+}
+ 
+
+.paragraf2{
+    border-style:solid;
+    height: 80px;
+    width: 600px;
+    margin:5px auto;
+    background-color: white;
+}
+
+#slider {
+    width:500px;
+    height:600px;
+    } 
+
+
+
+
+.sayfa{
+        width: 600px;
+        margin: 0 auto;
+        border-style:solid;
+        height: 600px;
+       
+    }
+
+ 
+.sliderKonum{
+    position: relative;
+    width: 600px;
+    height: 800px;
+    overflow: hidden;
+}
+.img-bir{left: 0px;}
+.img-iki{left: 300px;}
+.img-uc{left: 1000px;}
+.sliderKonum > .slider{
+      position: absolute;
+      left:0px;
+      width: 2800px;
+      height: 800px;
+      -webkit-animation-duration: 10s;
+      -webkit-animation-name: sliders;
+      -webkit-animation-iteration-count:infinite;
+      -moz-animation-duration: 10s;
+      -moz-animation-name: sliders;
+      -moz-animation-iteration-count:infinite;
+      -ms-animation-duration: 10s;
+      -ms-animation-name: sliders;
+      -ms-animation-iteration-count:infinite;
+      animation-duration: 10s;
+      animation-iteration-count:infinite;
+    }
+
+    @-webkit-keyframes sliders{
+      0% {left:0px;}
+      10% {left:0px;}
+      20% {left:-700px;}
+      30% {left:-700px;}
+      40% {left:-1400px;}
+      50% {left:-1400px;}
+    }
+    @-moz-keyframes sliders{
+      0% {left:0px;}
+      10% {left:0px;}
+      20% {left:-700px;}
+      30% {left:-700px;}
+      40% {left:-1400px;}
+      50% {left:-1400px;}
+    }
+    @-ms-keyframes sliders {
+      0% {left:0px;}
+      10% {left:0px;}
+      20% {left:-700px;}
+      30% {left:-700px;}
+      40% {left:-1400px;}
+      50% {left:-1400px;}
+    }
+    @keyframes sliders{
+      0% {left:0px;}
+      10% {left:0px;}
+      20% {left:-700px;}
+      30% {left:-700px;}
+      40% {left:-1400px;}
+      50% {left:-1400px;}
+    }
+
+.left{
+
+    text-align: right;
+}
+
+
 </style>
 <script src=""></script>
 </head>
 <body>
 
-<img src="img_la.jpg" alt="LA" style="width:100%">
+<div class="" >
+    <br/>
+    <br/>
+    <div class="paragraf2">
+        <h1> Anasayfa </h1>
+    </div>
+ 
+<div class="paragraf">
+    <p>
+        Merhaba değerli okurlar, GİTHUB profilimde görebileceğiniz gibi 
+        yemekler, dizi ve filmler tam olarak ilgi alanım içerisinde.
+        Size favori dizi ve filmlerimi paylaşmak aynı zamanda aldığım 
+        patika eğitimimin bir parçası olan ödevlerimi tamamlamak istiyorum.
+        Sevgi ve saygılarımla..
+        <br/>
+        <P class="left">Hilal ALKAN </P>
+    </p>
 
-<div class="">
- <h1>Bu bir h1 boyutunda başlık.</h1>
- <p>Bu bir paragraf.</p>
- <p>Bu başka bir paragraf.</p>
+
+
 </div>
+
+<div class="paragraf2" >
+    <ol style="list-style-type:none">
+        <li>
+            <a href="dizi.html">
+                Diziler
+            </a>
+        </li>
+        <li>
+            <a href="film.html">
+                Filmler
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/hilalkan">
+                GİTHUB
+            </a> 
+        </li>
+      
+  </ol>
+</div>
+
+
+
+
+
+ 
+<div class="sayfa">
+    <div class="sliderKonum">
+        <div class="slider">
+            <a class="img-bir" href="img/700x400.png">
+                <img src="images/1.jpg" width="500" height="600" alt="resim">
+            </a>
+            <a class="img-iki" href="img/700x400.png">
+                <img src="images/2.jpg" width="500" height="600" alt="resim">
+            </a>
+            <a class="img-uc" href="img/700x400.png">
+                <img src="images/3.jpg" width="500" height="600" alt="resim"> 
+            </a>
+
+            <a class="img-uc" href="img/700x400.png">
+                <img src="images/zombie.jpg" width="500" height="600" alt="resim"> 
+            </a>
+            <a class="img-uc" href="img/700x400.png">
+                <img src="images/legend.jpg" width="500" height="600" alt="resim"> 
+            </a>
+      
+        </div>
+    </div>
+</div>
+
+
+
+
+
 
 </body>
 </html>
